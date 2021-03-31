@@ -1,0 +1,23 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+:root {
+  --column-rows: 16;
+}
+
+.container {
+  display: grid;
+  background-color: aliceblue;
+  grid-template-columns: repeat(var(--column-rows), 1fr);
+  grid-template-rows: repeat(var(--column-rows), 1fr);
+  max-width: 800px;
+  min-height: 800px;
+  margin: 2rem auto;
+  grid-gap: 1px;
+}
+
+.grid {
+  border: 1px solid black;
+}
